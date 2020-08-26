@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/icon.png">
+    <title>Live Weather | ProgCreek</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/country-include.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <div class="weather-value">
+            <img src="/images/weather_img.png" alt="weather_img" style="height: 100px; width: 100px;">
+        </div>
+        <hr class="my-2">
+        <div class="row search-content">
+            <div class="col-sm-10 offset-sm-1 text-center">
+                <form action="" id="searchform" menthod="get" class="form-inline justify-content-center">
+                    <div class="input-group">
+                        <input autocomplete="off" type="text" id="city-code" class="form-control" placeholder="City Name">
+                        <select id="country-list" class="form-control"></select>
+                        <button type="submit" class="btn btn-info">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr class="my-2">
+        <div class="card text-center">
+            <div class="card-header">
+                <div class="weather-geo-location">
+                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> -</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="weather-notification">
+                    <p></p>
+                </div>
+                <div class="weather-container">
+                    <div class="weather-icon"><img src="/icons/unknown.png" alt="weather_ico"></div>
+                    <div class="weather-description">
+                        <p>-</p>
+                    </div>
+                    <div class="row">
+                        <div class="weather-value col">
+                            <p>Absolute<br><span class="value-large">- °C</span></p>
+                        </div>
+                        <div class="weather-value-feels-like col">
+                            <p>Real Feel<br><span class="value-large">- °C</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="weather-humidity col">
+                            <p>Humidity<br><span class="value-large"> - %</span></p>
+                        </div>
+                        <div class="weather-visibility col">
+                            <p>Visibility<br><span class="value-large"> - m</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="weather-wind-speed col">
+                            <p>Wind speed<br><span class="value-large"> - m/s</span></p>
+                        </div>
+                        <div class="weather-cloud col">
+                            <p>Cloudiness<br><span class="value-large"> - %</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="weather-sunrise col">
+                            <p>Sunrise<br><span class="value-large"> - </span></p>
+                        </div>
+                        <div class="weather-sunset col">
+                            <p>Sunset<br><span class="value-large"> - </span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p><small>Data provided by <i class="fa fa-sun-o"></i> openweathermap.org</small></p>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p><small>Copyright &copy; 2020 progcreek.com All rights reserved</small></p>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
